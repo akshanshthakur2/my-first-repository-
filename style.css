@@ -1,6 +1,6 @@
 @font-face {
     font-family: fkmono;
-    src: url(Media/NeueHaasDisplayRoman.ttf);
+    src: url(Media/FKGroteskMono-Regular.ttf);
 }
 @font-face {
     font-family: groneue;
@@ -84,8 +84,8 @@ html,body{
     position: absolute;
     top: -13%;
     /* -webkit-text-stroke: 20px #fff; */
-    text-shadow: 5px 0 #EAEEF4;
-    letter-spacing: 2px;
+    text-shadow: 20px 0 #EAEEF4;
+    /* letter-spacing: 2px; */
     position: relative;
 }
 
@@ -109,7 +109,7 @@ html,body{
 }
 
 #lower-home h4{
-    font-family: fkmono;
+    font-family: groneue;
     color: #EAEEF4;
     text-align: center;
     font-size: 2.2vw;
@@ -143,6 +143,7 @@ html,body{
     justify-content: right;
     align-items: center;
     background-color: #EAEEF4;
+    position: relative;
 }
 
 #page2 #container-pg2{
@@ -150,7 +151,7 @@ html,body{
     position: relative;
 }
 #container-pg2 h1{
-    font-family: fkmono;
+    font-family: groneue;
     font-size: 3.3vw;
     word-spacing: 8px;
     font-weight: 400;
@@ -171,7 +172,7 @@ html,body{
 
 #bottom-pg2{
     position: absolute;
-    bottom: 0;
+    bottom: 1%;
     right: 40vw;
 }
 
@@ -181,4 +182,75 @@ html,body{
     word-spacing: 2px;
     letter-spacing: 1px;
     font-family: fkmono;
+}
+
+#bbbk{
+    width: 100vw;
+    height: 80vh;
+    /* background-color: #000; */
+}
+
+#bbbk .top-bbbk{
+    width: 100vw;
+    height: 70%;
+    /* background-color: #000; */
+    display: flex;
+}
+
+.bb{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    background-image: url(https://images.ctfassets.net/ges2e29cb2dm/2sImCI8YRc55yWQ97OCs7q/d02e2d6381c647ef70b80cc90891b912/COVER_16x9_BadBunny_WHT.jpg?w=1024&h=576&fm=webp);
+}
+.bk{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    overflow: hidden;
+}
+.bk video{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.down-bbbk{
+    width: 100vw;
+    height: 30%;
+    display: flex;
+    background-color: #EAEEF4;
+}
+
+.down-bbbk .bbleft, .bkright{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+.down-bbbk .bkright{
+    width: 50%;
+    height: 100%;
+}
+
+.bbleft p, .bkright p{
+    font-family: fkmono;
+    font-size: .9vw;
+    color: #9B9DA1;
+}
+.bbleft p:nth-child(1), .bkright p:nth-child(1){
+    color: #000;
+    font-weight: 550;
+}
+.bbleft h1, .bkright h1{
+    position: absolute;
+    right: 60%;
+    font-size: 3vw;
+    top: 0;
+    font-family: fkmono;
+    font-weight: 500;
+}
+#bb01{
+    right: 5%;
+    font-family: groneue;
 }
