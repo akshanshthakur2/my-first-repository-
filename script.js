@@ -37,3 +37,19 @@ ScrollTrigger.scrollerProxy("#main", {
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
+
+
+var cursorpg = document.querySelector("#overlay")
+var cursor = document.querySelector("#cursor")
+
+
+cursorpg.addEventListener("mousemove", (dets)=>{
+  cursor.style.opacity = 1;
+  cursor.style.scale = 1;
+  cursor.style.left = dets.pageX +"px";
+  cursor.style.top = dets.pageY +"px";
+});
+cursorpg.addEventListener("mouseleave", (dets)=>{
+  cursor.style.opacity = 0;
+  cursor.style.scale = 0;
+});

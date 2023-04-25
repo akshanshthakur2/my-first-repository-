@@ -184,6 +184,44 @@ html,body{
     font-family: fkmono;
 }
 
+#page3{
+    width: 100vw;
+    position: relative;
+}
+
+#page3 #overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+}
+
+#cursor{
+    position: absolute;
+    color: #fff;
+    width: 5vw;
+    height: 5vw;
+    background: transparent;
+    display: grid;
+    background-color: #0000002b;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border-radius: 50%;
+    z-index: 99999;
+    opacity: 0;
+    scale: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+}
+
+#cursor h1{
+    position: relative;
+    font-size: 22px;
+    font-weight: 800;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+}
+
 #bbbk{
     width: 100vw;
     height: 80vh;
@@ -222,6 +260,10 @@ html,body{
     background-color: #EAEEF4;
 }
 
+.bkright{
+    border-left: 1px solid #000;
+}
+
 .down-bbbk .bbleft, .bkright{
     width: 50%;
     height: 100%;
@@ -253,4 +295,16 @@ html,body{
 #bb01{
     right: 5%;
     font-family: groneue;
+}
+
+#bbdkpd{
+    width: 100vw;
+    height: 80vh;
+    background-color: #000;
+}
+
+#top-four{
+    width: 100vw;
+    height: 70%;
+    background-color: antiquewhite;
 }
