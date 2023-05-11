@@ -46,8 +46,8 @@ var cursor = document.querySelector("#cursor")
 cursorpg.addEventListener("mousemove", (dets)=>{
   cursor.style.opacity = 1;
   cursor.style.scale = 1;
-  cursor.style.left = dets.pageX +"px";
-  cursor.style.top = dets.pageY +"px";
+  cursor.style.left = dets.offsetX +"px";
+  cursor.style.top = dets.offsetY +"px";
 });
 cursorpg.addEventListener("mouseleave", (dets)=>{
   cursor.style.opacity = 0;
